@@ -14,12 +14,22 @@
 }
 else
 {
-    <ul> 
-        <lh>Customer</lh>
-        @foreach (var customer in Model.Customers)
-        {
-            <li><a href="/customers/details/@customer.Id/@customer.Name/">@customer.Name</a></li>
-        }
-    </ul>
+    <table class="table table-bordered table-hover">
+        <thread>
+            <tr>
+                <th>Customer</th>
+                <th>Discount Rate</th>
+            </tr>
+        </thread>
+        <tbody>
+            @foreach (var customer in Model.Customers)
+            {
+                <tr>
+                    <td><a href="/customers/details/@customer.Id/@customer.Name/">@customer.Name</a></td>
+                    <td>@customer.MembershipType.Name</td>
+                </tr>
+            }
+        </tbody>
+    </table>
 }
 
