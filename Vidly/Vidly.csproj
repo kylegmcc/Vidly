@@ -213,6 +213,22 @@
     <Compile Include="Migrations\201909040234476_RemoveUnwantedColumnRating.Designer.cs">
       <DependentUpon>201909040234476_RemoveUnwantedColumnRating.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201909050134367_AddBirthdateToCustomer.cs" />
+    <Compile Include="Migrations\201909050134367_AddBirthdateToCustomer.Designer.cs">
+      <DependentUpon>201909050134367_AddBirthdateToCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201909050142326_UpdateCustomerBirthdateAllowNull.cs" />
+    <Compile Include="Migrations\201909050142326_UpdateCustomerBirthdateAllowNull.Designer.cs">
+      <DependentUpon>201909050142326_UpdateCustomerBirthdateAllowNull.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201909050143339_PopulateCustomerBirthdate.cs" />
+    <Compile Include="Migrations\201909050143339_PopulateCustomerBirthdate.Designer.cs">
+      <DependentUpon>201909050143339_PopulateCustomerBirthdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201909050152174_RetryPopulateCustomerBirthdate.cs" />
+    <Compile Include="Migrations\201909050152174_RetryPopulateCustomerBirthdate.Designer.cs">
+      <DependentUpon>201909050152174_RetryPopulateCustomerBirthdate.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Customer.cs" />
@@ -328,6 +344,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201909040234476_RemoveUnwantedColumnRating.resx">
       <DependentUpon>201909040234476_RemoveUnwantedColumnRating.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201909050134367_AddBirthdateToCustomer.resx">
+      <DependentUpon>201909050134367_AddBirthdateToCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201909050142326_UpdateCustomerBirthdateAllowNull.resx">
+      <DependentUpon>201909050142326_UpdateCustomerBirthdateAllowNull.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201909050143339_PopulateCustomerBirthdate.resx">
+      <DependentUpon>201909050143339_PopulateCustomerBirthdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201909050152174_RetryPopulateCustomerBirthdate.resx">
+      <DependentUpon>201909050152174_RetryPopulateCustomerBirthdate.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
