@@ -229,6 +229,14 @@
     <Compile Include="Migrations\201909050152174_RetryPopulateCustomerBirthdate.Designer.cs">
       <DependentUpon>201909050152174_RetryPopulateCustomerBirthdate.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201909081928087_AddMovieProperties.cs" />
+    <Compile Include="Migrations\201909081928087_AddMovieProperties.Designer.cs">
+      <DependentUpon>201909081928087_AddMovieProperties.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201909081928377_PopulateMovieData.cs" />
+    <Compile Include="Migrations\201909081928377_PopulateMovieData.Designer.cs">
+      <DependentUpon>201909081928377_PopulateMovieData.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Customer.cs" />
@@ -303,6 +311,8 @@
     <Content Include="Views\Customers\Index.cshtml" />
     <Content Include="Views\Customers\Details.cshtml" />
     <Content Include="Views\Movies\Index.cshtml" />
+    <Content Include="Views\Movies\Details.cshtml" />
+    <Content Include="Views\Customers\New.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -356,6 +366,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201909050152174_RetryPopulateCustomerBirthdate.resx">
       <DependentUpon>201909050152174_RetryPopulateCustomerBirthdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201909081928087_AddMovieProperties.resx">
+      <DependentUpon>201909081928087_AddMovieProperties.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201909081928377_PopulateMovieData.resx">
+      <DependentUpon>201909081928377_PopulateMovieData.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
