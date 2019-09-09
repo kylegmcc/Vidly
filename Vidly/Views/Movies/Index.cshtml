@@ -4,7 +4,13 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
+
 <h2>Movies</h2>
+
+<button type="button" class="btn btn-default">@Html.ActionLink("New Movie", "NewMovie", "Movies")</button>
+@*
+    <button type="button" class="btn btn-primary"><a href="/movies/newmovie/">New Movie</a></button>
+*@
 
 @if (Model.Movies.Count == 0)
 {

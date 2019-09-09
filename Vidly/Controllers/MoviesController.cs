@@ -33,22 +33,25 @@ namespace Vidly.Controllers
             };
 
             return View(viewModel);
+        }
 
-
-           /* var movie = new Movie() { Name = "Shrek!" };
-            var customers = new List<Customer>
+        public ActionResult NewMovie()
+        {
+            var movie = new Movie()
             {
-                new Customer { Name = "Customer 1"},
-                new Customer { Name = "Customer 2"}
+                DateAdded = DateTime.Now
             };
 
-            var viewModel = new RandomMovieViewModel()
-            {
-                Movie = movie,
-                Customers = customers
-            };
+            return View(movie);
+        }
 
-            return View(viewModel); */
+        public ActionResult Save(Movie movie)
+        {
+            _context.Movies.Add(movie);
+
+            _context.SaveChanges();
+
+            return RedirectToAction("Index","Movies");
         }
 
         [Route("movies/details/{id}")]
