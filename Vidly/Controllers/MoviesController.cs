@@ -45,9 +45,18 @@ namespace Vidly.Controllers
             return View(movie);
         }
 
+        [HttpPost]
+        [ValidateAntiForgeryToken]
         public ActionResult Save(Movie movie)
         {
-            if(movie.Id==0)
+            if (!ModelState.IsValid)
+            {
+                var viewModel = new Movie();
+
+                return View("NewMovie", viewModel);
+            }
+
+            if (movie.Id==0)
                 _context.Movies.Add(movie);
             else
             {

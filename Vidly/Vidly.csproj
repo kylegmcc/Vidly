@@ -237,12 +237,18 @@
     <Compile Include="Migrations\201909081928377_PopulateMovieData.Designer.cs">
       <DependentUpon>201909081928377_PopulateMovieData.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201909142205430_AddAnnotationToCustomer.cs" />
+    <Compile Include="Migrations\201909142205430_AddAnnotationToCustomer.Designer.cs">
+      <DependentUpon>201909142205430_AddAnnotationToCustomer.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Customer.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Models\MembershipType.cs" />
+    <Compile Include="Models\Min18YearsIfAMember.cs" />
+    <Compile Include="Models\MinMaxNumberInStock.cs" />
     <Compile Include="Models\Movie.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
@@ -375,6 +381,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201909081928377_PopulateMovieData.resx">
       <DependentUpon>201909081928377_PopulateMovieData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201909142205430_AddAnnotationToCustomer.resx">
+      <DependentUpon>201909142205430_AddAnnotationToCustomer.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
