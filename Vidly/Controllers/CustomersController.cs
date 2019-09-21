@@ -70,14 +70,7 @@ namespace Vidly.Controllers
         // GET: Customers
         public ActionResult Index()
         {
-            var customers = _context.Customers.Include(c => c.MembershipType).ToList();
-
-            var viewModel = new CustomersViewModel()
-            {
-                Customers = customers
-            };
-
-            return View(viewModel);
+            return View();
         }
 
         [Route("customers/details/{id}/{name}")]
